@@ -1,0 +1,94 @@
+/* styles pour les écrans larges */
+body {
+    font-family: Arial, sans-serif;
+  }
+  main {
+      text-align: center;
+  }
+  
+  img, h1, p {
+      display: inline-block;
+      margin: 0 10px;
+      vertical-align: middle;
+  }
+  
+  p.bordered {
+    border: 1px solid gray;
+    border-radius: 60px;
+    padding: 13px;
+  }
+  
+  ul {
+      list-style-type: none; /* pour enlever les puces */
+      display: flex; /* pour aligner horizontalement les images */
+      justify-content: space-evenly; /* pour répartir l'espace entre les éléments de manière égale */
+    }
+    
+    
+    li {
+      display: flex; /* pour aligner verticalement le contenu */
+      flex-direction: column; /* pour mettre le texte sous l'image */
+  
+    }
+    
+    
+    ul.list1 li img {
+      display: block; /* pour éviter les espaces blancs sous les images */
+      
+      margin: 0 auto; /* pour centrer les images horizontalement */
+      height: 40px;
+      width: auto;
+    }
+  
+    ul.list2 li img {
+      display: block; /* pour éviter les espaces blancs sous les images */
+      
+      margin: 0 auto; /* pour centrer les images horizontalement */
+      height: 200px;
+      width: auto;
+      border-radius: 25px;
+      margin-bottom: 10px; /* pour ajouter un peu d'espace entre l'image et le texte */
+  
+    }
+  
+    ul.list2 li p {
+      color: gray;
+    }
+  
+    ul.list2 li p.ville {
+      color: black;
+      font-weight: bold;
+    }
+  
+    ul.list1 li {
+      text-align: center;
+    }
+  
+    ul.list2 li {
+      text-align: left;
+    }
+    
+  /* styles pour les écrans plus étroits */
+  @media only screen and (max-width: 600px) {
+    main {
+      text-align: left;
+    }
+    
+    img, h1, p {
+      display: block;
+      margin: 10px auto;
+    }
+    
+    ul {
+      display: block;
+    }
+    
+    ul.list1 li {
+      text-align: left;
+    }
+    
+    ul.list2 li {
+      text-align: center;
+    }
+  }
+  

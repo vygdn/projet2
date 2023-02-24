@@ -1,0 +1,71 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+
+img, h1, p {
+    justify-content: space-between;
+    display: inline-block;
+    margin: 0 10px;
+    
+}
+
+p.bordered {
+  border: 1px solid gray; /* bordure autour de la barre de recherche */
+  border-radius: 60px; /* arrondir la bordure */
+  box-shadow: 2px 2px 2px rgb(202, 201, 201); /* pour faire un petit effet d'ombre */
+  padding: 13px; /* éloigner la bordure du texte */
+}
+
+ul {
+    list-style-type: none; /* pour enlever les puces */
+    display: flex; /* pour aligner horizontalement les images */
+    justify-content: space-evenly; /* pour répartir l'espace entre les éléments de manière égale */
+  }
+  
+  
+  li {
+    display: flex; /* pour aligner verticalement le contenu */
+    flex-direction: column; /* pour mettre le texte sous l'image */
+
+  }
+  
+  
+  ul.list1 li img {
+    display: block; /* pour éviter les espaces blancs sous les images */
+    
+    margin: 0 auto; /* pour centrer les images horizontalement */
+    height: 40px;
+    width: auto;
+  }
+
+  ul.list2 li img {
+    display: block; /* pour éviter les espaces blancs sous les images */
+    
+    margin: 0 auto; /* pour centrer les images horizontalement */
+    height: 200px;
+    width: auto;
+    border-radius: 25px;
+    margin-bottom: 10px; /* pour ajouter un peu d'espace entre l'image et le texte */
+
+  }
+
+  ul.list2 li p {
+    color: gray; /* pour que le texte soit en gris */
+  }
+
+  ul.list2 li p.ville {
+    color: black; /* que le texte du lieu est en noir et en gras */
+    font-weight: bold;
+  }
+
+  ul.list1 li {
+    text-align: center;
+  }
+
+  ul.list2 li {
+    text-align: left;
+  }
+  
+ 
+

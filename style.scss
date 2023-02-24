@@ -1,0 +1,69 @@
+$body-font-family: Arial, sans-serif;
+
+body {
+  font-family: $body-font-family;
+}
+
+main {
+  text-align: center;
+}
+
+img, h1, p {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 10px;
+}
+
+p.bordered {
+  border: 1px solid gray;
+  border-radius: 60px;
+  padding: 13px;
+}
+
+ul {
+  list-style-type: none; /* pour enlever les puces */
+  display: flex; /* pour aligner horizontalement les images */
+  justify-content: space-evenly; /* pour répartir l'espace entre les éléments de manière égale */
+  
+  li {
+    display: flex; /* pour aligner verticalement le contenu */
+    flex-direction: column; /* pour mettre le texte sous l'image */
+  }
+  
+  &.list1 {
+    li {
+      text-align: center;
+      
+      img {
+        display: block; /* pour éviter les espaces blancs sous les images */
+        margin: 0 auto; /* pour centrer les images horizontalement */
+        height: 40px;
+        width: auto;
+      }
+    }
+  }
+  
+  &.list2 {
+    li {
+      text-align: left;
+      
+      img {
+        display: block; /* pour éviter les espaces blancs sous les images */
+        margin: 0 auto; /* pour centrer les images horizontalement */
+        height: 200px;
+        width: auto;
+        border-radius: 25px;
+        margin-bottom: 10px; /* pour ajouter un peu d'espace entre l'image et le texte */
+      }
+      
+      p {
+        color: gray;
+        
+        &.ville {
+          color: black;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}
